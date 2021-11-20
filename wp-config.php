@@ -23,13 +23,22 @@
 define( 'DB_NAME', 'taibasta_1813-sportsconsult' );
 
 /** MySQL database username */
-define( 'DB_USER', 'taibasta_admin' );
+// define( 'DB_USER', 'taibasta_admin' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'admin!@2020' );
+// define( 'DB_PASSWORD', 'admin!@2020' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+// define( 'DB_HOST', 'localhost' );
+
+/** MySQL database username */
+define( 'DB_USER', 'sysadmin' );
+
+/** MySQL database password */
+define( 'DB_PASSWORD', 'sysadmin' );
+
+/** MySQL hostname */
+define( 'DB_HOST', 'pbexperts.cwsfw78yvwwm.us-east-1.rds.amazonaws.com' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
