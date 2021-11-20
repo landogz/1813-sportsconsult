@@ -1,0 +1,60 @@
+[04-Aug-2021 05:16:34 UTC] WordPress database error Unknown column 'taiba_' in 'field list' for query SELECT taiba_
+[04-Aug-2021 05:16:34 UTC] WordPress database error Incorrect table name '' for query INSERT INTO `` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_key', 'rJR%pWJ1{`z0Q.c[cT|j3,uWT`tVJ0]UQ]tElbK;PJoyqYK~JAMfi!MxQt&L,)G1', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by wp_print_scripts, wp_scripts, WP_Scripts->__construct, WP_Scripts->init, do_action_ref_array('wp_default_scripts'), WP_Hook->do_action, WP_Hook->apply_filters, wp_default_scripts, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_option
+[04-Aug-2021 05:16:34 UTC] WordPress database error Incorrect table name '' for query INSERT INTO `` (`option_name`, `option_value`, `autoload`) VALUES ('nonce_salt', 'dy^cPU;([(4rks/9V[yg+3M7-Rw-UpjSV72_a=9#hl`S9eu:GPh$o_Tzt[WNDlgL', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by wp_print_scripts, wp_scripts, WP_Scripts->__construct, WP_Scripts->init, do_action_ref_array('wp_default_scripts'), WP_Hook->do_action, WP_Hook->apply_filters, wp_default_scripts, wp_create_nonce, wp_hash, wp_salt, update_site_option, update_network_option, add_network_option, add_option
+[04-Aug-2021 05:23:24 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(``)' at line 1 for query ALTER TABLE taiba_e_submissions_values ADD  `` (``) made by require_once('wp-admin/admin.php'), do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, ElementorPro\Modules\Forms\Submissions\Component->ElementorPro\Modules\Forms\Submissions\{closure}, ElementorPro\Modules\Forms\Submissions\Database\Migration::install, Elementor\Core\Utils\Collection->map, array_map, ElementorPro\Modules\Forms\Submissions\Database\Migration::ElementorPro\Modules\Forms\Submissions\Database\{closure}, ElementorPro\Modules\Forms\Submissions\Database\Migrations\Initial->run, ElementorPro\Modules\Forms\Submissions\Database\Migrations\Initial->create_tables, dbDelta
+[04-Aug-2021 05:23:24 UTC] WordPress database error Duplicate key name 'main_meta_id_index' for query ALTER TABLE `taiba_e_submissions`
+    		ADD INDEX `main_meta_id_index` (`main_meta_id`),
+    		ADD UNIQUE INDEX `hash_id_unique_index` (`hash_id`),
+    		ADD INDEX `hash_id_index` (`hash_id`),
+    		ADD INDEX `type_index` (`type`),
+    		ADD INDEX `post_id_index` (`post_id`),
+    		ADD INDEX `element_id_index` (`element_id`),
+    		ADD INDEX `campaign_id_index` (`campaign_id`),
+    		ADD INDEX `user_id_index` (`user_id`),
+    		ADD INDEX `user_ip_index` (`user_ip`),
+    		ADD INDEX `status_index` (`status`),
+    		ADD INDEX `is_read_index` (`is_read`),
+    		ADD INDEX `created_at_gmt_index` (`created_at_gmt`),
+    		ADD INDEX `updated_at_gmt_index` (`updated_at_gmt`),
+    		ADD INDEX `created_at_index` (`created_at`),
+    		ADD INDEX `updated_at_index` (`updated_at`)
+		 made by require_once('wp-admin/admin.php'), do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, ElementorPro\Modules\Forms\Submissions\Component->ElementorPro\Modules\Forms\Submissions\{closure}, ElementorPro\Modules\Forms\Submissions\Database\Migration::install, Elementor\Core\Utils\Collection->map, array_map, ElementorPro\Modules\Forms\Submissions\Database\Migration::ElementorPro\Modules\Forms\Submissions\Database\{closure}, ElementorPro\Modules\Forms\Submissions\Database\Migrations\Initial->run, ElementorPro\Modules\Forms\Submissions\Database\Migrations\Initial->add_indexes
+[04-Aug-2021 05:23:24 UTC] WordPress database error Duplicate key name 'submission_id_index' for query ALTER TABLE `taiba_e_submissions_values`
+    		ADD INDEX `submission_id_index` (`submission_id`),
+    		ADD INDEX `key_index` (`key`)
+		 made by require_once('wp-admin/admin.php'), do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, ElementorPro\Modules\Forms\Submissions\Component->ElementorPro\Modules\Forms\Submissions\{closure}, ElementorPro\Modules\Forms\Submissions\Database\Migration::install, Elementor\Core\Utils\Collection->map, array_map, ElementorPro\Modules\Forms\Submissions\Database\Migration::ElementorPro\Modules\Forms\Submissions\Database\{closure}, ElementorPro\Modules\Forms\Submissions\Database\Migrations\Initial->run, ElementorPro\Modules\Forms\Submissions\Database\Migrations\Initial->add_indexes
+[04-Aug-2021 05:23:24 UTC] WordPress database error Duplicate key name 'submission_id_index' for query ALTER TABLE `taiba_e_submissions_actions_log`
+    		ADD INDEX `submission_id_index` (`submission_id`),
+    		ADD INDEX `action_name_index` (`action_name`),
+    		ADD INDEX `status_index` (`status`),
+    		ADD INDEX `created_at_gmt_index` (`created_at_gmt`),
+    		ADD INDEX `updated_at_gmt_index` (`updated_at_gmt`),
+    		ADD INDEX `created_at_index` (`created_at`),
+    		ADD INDEX `updated_at_index` (`updated_at`)
+		 made by require_once('wp-admin/admin.php'), do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, ElementorPro\Modules\Forms\Submissions\Component->ElementorPro\Modules\Forms\Submissions\{closure}, ElementorPro\Modules\Forms\Submissions\Database\Migration::install, Elementor\Core\Utils\Collection->map, array_map, ElementorPro\Modules\Forms\Submissions\Database\Migration::ElementorPro\Modules\Forms\Submissions\Database\{closure}, ElementorPro\Modules\Forms\Submissions\Database\Migrations\Initial->run, ElementorPro\Modules\Forms\Submissions\Database\Migrations\Initial->add_indexes
+[04-Aug-2021 05:23:24 UTC] WordPress database error Duplicate column name 'referer_title' for query 
+			ALTER TABLE `taiba_e_submissions`
+			ADD COLUMN `referer_title` varchar(300) null AFTER `referer`;
+		 made by require_once('wp-admin/admin.php'), do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, ElementorPro\Modules\Forms\Submissions\Component->ElementorPro\Modules\Forms\Submissions\{closure}, ElementorPro\Modules\Forms\Submissions\Database\Migration::install, Elementor\Core\Utils\Collection->map, array_map, ElementorPro\Modules\Forms\Submissions\Database\Migration::ElementorPro\Modules\Forms\Submissions\Database\{closure}, ElementorPro\Modules\Forms\Submissions\Database\Migrations\Referer_Extra->run
+[04-Aug-2021 05:23:24 UTC] WordPress database error Duplicate key name 'referer_index' for query 
+			ALTER TABLE `taiba_e_submissions`
+			ADD INDEX `referer_index` (`referer`(191)),
+			ADD INDEX `referer_title_index` (`referer_title`(191));
+		 made by require_once('wp-admin/admin.php'), do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, ElementorPro\Modules\Forms\Submissions\Component->ElementorPro\Modules\Forms\Submissions\{closure}, ElementorPro\Modules\Forms\Submissions\Database\Migration::install, Elementor\Core\Utils\Collection->map, array_map, ElementorPro\Modules\Forms\Submissions\Database\Migration::ElementorPro\Modules\Forms\Submissions\Database\{closure}, ElementorPro\Modules\Forms\Submissions\Database\Migrations\Referer_Extra->run
+[04-Aug-2021 05:24:10 UTC] Astra Addon: Batch Process Started!
+[04-Aug-2021 05:24:10 UTC] Astra Addon: Queuing 3.0.0 - astra_addon_clear_assets_cache
+[04-Aug-2021 05:24:10 UTC] Astra Addon: Queuing 3.3.0 - astra_addon_clear_assets_cache
+[04-Aug-2021 05:24:10 UTC] Astra Addon: Queuing 3.3.2 - astra_addon_clear_assets_cache
+[04-Aug-2021 05:24:10 UTC] Astra Addon: Queuing 3.4.2 - astra_addon_clear_assets_cache
+[04-Aug-2021 05:24:10 UTC] Astra Addon: Queuing 3.5.0 - astra_addon_page_headers_support_to_builder_layout
+[04-Aug-2021 05:24:10 UTC] Astra Addon: Queuing 3.5.0 - astra_addon_clear_assets_cache
+[04-Aug-2021 05:24:10 UTC] Astra Addon: Queuing 3.5.1 - astra_addon_headings_font_support
+[04-Aug-2021 05:24:10 UTC] Astra Addon: Queuing 3.5.1 - astra_addon_cart_color_not_working_in_old_header
+[04-Aug-2021 05:24:10 UTC] Astra Addon: Queuing 3.5.1 - astra_addon_clear_assets_cache
+[04-Aug-2021 05:24:10 UTC] Astra Addon: Queuing 3.5.7 - astra_addon_outline_cart_bg_color_support
+[04-Aug-2021 05:24:10 UTC] Astra Addon: Queuing 3.5.7 - astra_addon_remove_header_sections_deps_new_builder
+[04-Aug-2021 05:24:10 UTC] Astra Addon: Queuing 3.5.7 - astra_addon_swap_section_not_working_in_old_header
+[04-Aug-2021 05:24:10 UTC] Astra Addon: Queuing 3.5.7 - astra_addon_clear_assets_cache
+[13-Oct-2021 06:50:27 UTC] Astra Addon: Batch Process Started!
+[13-Oct-2021 06:50:27 UTC] Astra Addon: Queuing 3.5.8 - astra_sticky_header_site_title_tagline_css
+[13-Oct-2021 06:50:27 UTC] Astra Addon: Queuing 3.5.9 - astra_addon_remove_responsive_account_menu_colors_support
